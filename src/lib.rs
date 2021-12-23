@@ -18,10 +18,6 @@ pub fn rpn(m: &str) -> i32 {
             "+" | "-" => do_operation(token, &mut stack),
             _ => stack.push_back(token.parse().unwrap()),
         }
-        if token == "+" {
-        } else {
-            
-        }
     }
     assert_eq!(stack.len(), 1);
     *stack.front().unwrap()
