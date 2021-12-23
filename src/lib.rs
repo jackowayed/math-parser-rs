@@ -22,7 +22,7 @@ pub fn rpn(m: &str) -> i32 {
         }
     }
     assert_eq!(stack.len(), 1);
-    *stack.front().unwrap()
+    stack.pop_back().unwrap()
 }
 
 
